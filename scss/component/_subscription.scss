@@ -1,0 +1,17 @@
+.main-section{
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    .blue-shape{
+        position: absolute;
+        left: 160px;
+        top: 0;
+        right: auto;
+        z-index: -1;
+        display: block;
+        width: 70vw;
+        height: 60vh;
+        background-color:$style-box;
+         transform: rotate(20deg);
+    }
+}
