@@ -1,17 +1,22 @@
-body{
-     font-family: 'Proxima Nova Condensed', sans-serif;
-     background-color: $white-color;
+@font-face {
+  font-family: "Proximanova opt";
+  src: url("/assets/font/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: $white-color;
+  font-family:"Proximanova opt",sans-serif ;
 }
 
-.container-custom{
-   width: 100%;
-    max-width: 70rem;
-    margin-right: auto;
-    margin-left: auto; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 70rem;
+  margin-right: auto;
+  margin-left: auto;
 }
