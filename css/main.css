@@ -78,13 +78,142 @@ body {
 .main-section .blue-shape {
   position: absolute;
   left: 160px;
-  top: 120px;
+  top: 20px;
   right: 0;
   z-index: -1;
   display: block;
   width: 70vw;
   height: 80vh;
   background-color: #f2faff;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+.main-section .content-pricing {
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-section .content-pricing .pricing-title h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: Amerigo-bt roman opt;
+}
+.main-section .content-pricing .pricing-button .month {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.22px;
+  text-transform: uppercase;
+}
+.main-section .content-pricing .pricing-button .free-icon {
+  position: absolute;
+  right: -20px;
+  top: -35px;
+}
+.main-section .content-pricing .pricing-button .yearly {
+  position: relative;
+  opacity: 0.65;
+  color: #4c4d5f;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.22px;
+  text-transform: uppercase;
+}
+.main-section .content-pricing .pricing-button .toggle-bar {
+  position: relative;
+  background-color: #00b289;
+  width: 50px;
+  height: 29px;
+  border-radius: 15px;
+  margin: 0px 28px 0px;
+}
+.main-section .content-pricing .pricing-button .toggle-bar .toggle-ball {
+  position: absolute;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-radius: 50%;
+}
+.main-section .card .btn {
+  width: 100%;
+  background-color: #00b289;
+  padding: 22px 25px;
+}
+.main-section .card .card-body {
+  padding: 20% 14%;
+}
+.main-section .card .card-body .f-m1 {
+  margin-bottom: 163px;
+}
+.main-section .card .card-body .f-m2 {
+  margin-bottom: 122px;
+}
+.main-section .card .card-body .card-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: rgb(76, 77, 95);
+}
+.main-section .card .card-body .card-intro {
+  color: rgb(76, 77, 95);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 90%;
+}
+.main-section .card .card-body .price-box {
+  height: 50px;
+  margin-top: 36px;
+  border-bottom: 2px solid #01b289;
+}
+.main-section .card .card-body .price-box .price-symbol {
+  position: relative;
+  top: -12px;
+  margin-right: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 400;
+  height: 28px;
+  width: 17.8px;
+  color: rgb(76, 77, 95);
+}
+.main-section .card .card-body .price-box .price-amount {
+  position: relative;
+  top: -4px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-right: 10px;
+  color: rgb(76, 77, 95);
+}
+.main-section .card .card-body .price-box .price-month {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 26px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.main-section .card .card-body .feature-list {
+  padding-top: 40px;
+}
+.main-section .card .card-body .feature-list .feature-content {
+  padding-bottom: 18px;
+}
+.main-section .card .card-body .feature-list .feature-content img {
+  width: 12px;
+  height: 8px;
+  margin-right: 10px;
+}
+.main-section .card .card-body .feature-list .feature-content .feature-description {
+  color: rgb(76, 77, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
 }

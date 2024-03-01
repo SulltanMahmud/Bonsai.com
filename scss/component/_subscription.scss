@@ -1,18 +1,169 @@
-.main-section{
-    position: relative;
-    padding-top: 110px;
-    padding-bottom: 40px;
+.main-section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 40px;
 
-    .blue-shape{
-        position: absolute;
-        left: 160px;
-        top:  120px;
-        right: 0;
-        z-index: -1;
-        display: block;
-        width: 70vw;
-        height: 80vh;
-        background-color:$style-box;
-         transform: rotate(-10deg);
+  .blue-shape {
+    position: absolute;
+    left: 160px;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 70vw;
+    height: 80vh;
+    background-color: $style-box;
+    transform: rotate(-6deg);
+  }
+
+  .content-pricing {
+     width: 55%;
+     margin-right: auto;
+     margin-left: auto;
+    .pricing-title {
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 400;
+        font-family: Amerigo-bt roman opt;
+      }
     }
+
+    .pricing-button {
+      .month {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 1.22px;
+        text-transform: uppercase;
+      }
+
+      .free-icon{
+        position: absolute;
+
+         right: -20px;
+         top: -35px;
+      }
+
+      .yearly {
+        position: relative;
+        opacity: 0.65;
+        color: #4c4d5f;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.22px;
+        text-transform: uppercase;
+      }
+      .toggle-bar {
+        position: relative;
+        background-color: $button-color;
+        width: 50px;
+        height: 29px;
+        border-radius: 15px;
+        margin: 0px 28px 0px;
+
+        .toggle-ball {
+          position: absolute;
+          top: 2px;
+          width: 25px;
+          height: 25px;
+          background-color: $white-color;
+          margin-right: 2px;
+          margin-left: 2px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .card{
+    .btn{
+      width: 100%;
+      background-color: $button-color;
+      padding:22px 25px ;
+    }
+    .card-body{
+      .f-m1{
+        margin-bottom: 163px;
+      }
+      .f-m2{
+        margin-bottom: 122px;
+      }
+
+      padding: 20% 14%;
+      .card-title{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 26px;
+        line-height: 1.4;
+        font-weight: 600;
+        color: $title-color;
+      }
+
+      .card-intro{
+         color:$title-color;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 20px;
+         max-width: 90%;
+      }
+      .price-box{
+        // width: 2.2px;
+        height: 50px;
+        margin-top: 36px;
+        border-bottom: 2px solid $bottom-border-color;
+        .price-symbol{
+          position: relative;
+          top: -12px;
+          margin-right: 10px;
+          align-self: flex-start;
+          font-size: 30px;
+          line-height: 28px;
+          font-weight: 400;
+          height: 28px;
+          width: 17.8px;
+          color: $title-color;
+        }
+
+        .price-amount{
+          position: relative;
+          top: -4px;
+          font-size: 60px;
+          font-weight: 700;
+          line-height: 28px;
+          margin-right: 10px;
+          color:$title-color ;
+
+        }
+
+        .price-month{
+          align-self: flex-end;
+          font-size: 26px;
+          font-weight: 400;
+          // line-height: 36.4;
+          margin-left: 15px;
+        }
+      }
+
+      .feature-list{
+        padding-top: 40px;
+        // margin-bottom: 120px;
+
+
+        .feature-content{
+          padding-bottom: 18px;
+          img{
+            width:12px ;
+            height: 8px;
+            margin-right: 10px;
+          }
+          .feature-description{
+            color: $title-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+  }
 }
