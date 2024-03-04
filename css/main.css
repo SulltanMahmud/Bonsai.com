@@ -21,6 +21,10 @@ body {
   margin-left: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-nav {
   margin-left: auto;
   margin-right: auto;
@@ -214,4 +218,55 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
+}
+
+.title-box .title h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  font-family: Amerigo-bt roman opt;
+}
+
+.add-on {
+  margin-bottom: 10px;
+  padding: 10px 40px 5px;
+  -webkit-box-shadow: 0 0 60px 0 rgba(2, 4, 69, 0.05);
+          box-shadow: 0 0 60px 0 rgba(2, 4, 69, 0.05);
+}
+.add-on-box .left-add .heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgb(76, 77, 95);
+}
+.add-on-box .left-add .heading-description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(76, 77, 95);
+}
+.add-on-box .left-add .heading-description .learn-more {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.add-on-box .left-add .learn-more {
+  color: #00b289;
+  font-size: 14px;
+  font-weight: 700;
+}
+.add-on-box .left-add .learn-more i {
+  font-size: 13px;
+}
+.add-on-box .right-add .right-heading {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  color: rgb(76, 77, 95);
+}
+.add-on-box .right-add .right-heading h2 {
+  font-weight: 200;
+}
+.add-on-box .right-add .right-heading .month-text {
+  font-size: 14px;
+  color: rgb(76, 77, 95);
 }
