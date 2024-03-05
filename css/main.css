@@ -269,3 +269,31 @@ a {
   font-size: 14px;
   color: rgb(76, 77, 95);
 }
+
+.buisness-bg {
+  background-color: #f2faff;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.buisness-bg .buisness-box {
+  padding: 50px 48px;
+}
+.buisness-bg .buisness-box .buisness-title h1 {
+  font-family: "Amerigo-bt roman opt", italic, sans-serif;
+  font-size: 2.75rem;
+  line-height: 130%;
+  color: rgb(76, 77, 95);
+  font-weight: 300;
+}
+.buisness-bg .buisness-box .buisness-title h1 span {
+  color: #00b289;
+}
+.buisness-bg .buisness-box .free-button .btn {
+  background-color: #00b289;
+  padding: 10px 30px;
+}
+.buisness-bg .buisness-box .free-button .btn:hover {
+  background-color: #00a37e;
+}
