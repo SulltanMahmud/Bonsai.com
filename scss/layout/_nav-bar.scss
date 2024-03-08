@@ -9,6 +9,29 @@
         margin-right: 20px;
         font-size: 17px;
         font-weight: 400;
+
+        .drop-down-content {
+          display: none;
+          width: 350px;
+          position: absolute;
+          z-index: 1000;
+          .card {
+            padding: 40px 20px;
+          }
+
+          .card-section-one-hover:hover {
+            display: block;
+          }
+          .card-section-one {
+            display: none;
+          }
+        }
+
+        &:hover {
+          .drop-down-content {
+            display: block;
+          }
+        }
       }
     }
   }

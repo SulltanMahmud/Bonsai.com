@@ -1,16 +1,116 @@
-.product-section {
-  .product-heading {
-    margin-bottom: 40px;
-    color: #4c4d5f;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.12px;
-    text-transform: uppercase;
+.footer-wrapper {
+    margin-top: 150px;
+    margin-bottom: 90px;
+  .product-section {
+    .product-heading {
+      margin-bottom: 40px;
+      color: #4c4d5f;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+    }
+
+    .list-section {
+      margin-bottom: 25px;
+
+      a {
+        margin-bottom: 1px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        color: #4c4d5f;
+      }
+    }
+
+    .sub-list {
+      span {
+        color: $button-color;
+      }
+      a {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        color: #4c4d5f;
+      }
+    }
   }
 
-  .list-section {
-    margin-bottom: 25px;
+  .free-section {
+    //   margin-bottom: 25px;
+    .free-heading {
+      margin-bottom: 40px;
+      color: #4c4d5f;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+    }
+    .first-section {
+      a {
+        margin-bottom: 1px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        color: #4c4d5f;
+      }
+      margin-bottom: 25px;
+    }
 
+    .self-section {
+      a {
+        margin-bottom: 1px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: 0.11px;
+        color: #4c4d5f;
+      }
+      margin-bottom: 40px;
+    }
+
+    .template {
+      .template-heading {
+        margin-bottom: 20px;
+        color: #4c4d5f;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.12px;
+        text-transform: uppercase;
+      }
+
+      .accordion {
+        --bs-accordion-border-width: none;
+        .accordion-item {
+          .accordion-header {
+            .accordion-button {
+              font-weight: 500;
+              line-height: 1.2;
+              color: #4c4d5f;
+              padding: 6px 9px;
+              &::after {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bonsai-section {
+    margin-left: 120px;
+    .bonsai-heading {
+      margin-bottom: 40px;
+      color: #4c4d5f;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+    }
     a {
       margin-bottom: 1px;
       font-size: 16px;
@@ -19,50 +119,24 @@
       letter-spacing: 0.11px;
       color: #4c4d5f;
     }
-  }
 
-  .sub-list {
-    a {
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 300;
-      letter-spacing: 0.11px;
-      color: #4c4d5f;
-    }
-  }
-}
-
-.free-section {
-  //   margin-bottom: 25px;
-  .free-heading {
-    margin-bottom: 40px;
-    color: #4c4d5f;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.12px;
-    text-transform: uppercase;
-  }
-  .first-section {
-    a {
-      margin-bottom: 1px;
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 300;
-      letter-spacing: 0.11px;
-      color: #4c4d5f;
-       
-    }
-    margin-bottom: 25px;
-  }
-
-  .self-section {
-    a {
-      margin-bottom: 1px;
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 300;
-      letter-spacing: 0.11px;
-      color: #4c4d5f;
+    .list-section {
+      .accordion {
+        --bs-accordion-border-width: none;
+        .accordion-item {
+          .accordion-header {
+            .accordion-button {
+              font-weight: 500;
+              line-height: 1.2;
+              color: #4c4d5f;
+              padding: 6px 9px;
+              &::after {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

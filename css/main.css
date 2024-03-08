@@ -43,6 +43,24 @@ a {
   font-size: 17px;
   font-weight: 400;
 }
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content {
+  display: none;
+  width: 350px;
+  position: absolute;
+  z-index: 1000;
+}
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card {
+  padding: 40px 20px;
+}
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card-section-one-hover:hover {
+  display: block;
+}
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card-section-one {
+  display: none;
+}
+.main-nav .nav-left .navbar-nav .nav-item:hover .drop-down-content {
+  display: block;
+}
 .main-nav .nav-right form .btn-1 {
   margin-left: 17px;
   padding: 12px 23px 9px;
@@ -139,10 +157,11 @@ a {
   position: relative;
   margin-left: 20px;
   margin-right: 30px;
+  cursor: pointer;
 }
 .main-section .content-pricing .pricing-button .toggle_box input[type=checkbox] {
   opacity: 0;
-  width: 30px;
+  width: 100%;
   height: 30px;
 }
 .main-section .content-pricing .pricing-button .circle {
@@ -154,6 +173,8 @@ a {
   top: 2px;
   left: 0px;
   margin-left: 2px;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
 }
 .main-section .card {
   height: 914px;
@@ -163,6 +184,12 @@ a {
   background-color: #00b289;
   padding: 22px 25px;
   border: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.main-section .card .btn:hover {
+  background-color: #00a37e;
 }
 .main-section .card .card-body {
   padding: 20% 14%;
@@ -339,12 +366,19 @@ a {
   padding: 0px;
   margin-top: 15px;
   margin-bottom: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 #accordionFlushExample .accordion-item button:hover {
   color: #00a37e;
 }
 
-.product-section .product-heading {
+.footer-wrapper {
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+.footer-wrapper .product-section .product-heading {
   margin-bottom: 40px;
   color: #4c4d5f;
   font-size: 17px;
@@ -352,10 +386,10 @@ a {
   letter-spacing: 0.12px;
   text-transform: uppercase;
 }
-.product-section .list-section {
+.footer-wrapper .product-section .list-section {
   margin-bottom: 25px;
 }
-.product-section .list-section a {
+.footer-wrapper .product-section .list-section a {
   margin-bottom: 1px;
   font-size: 16px;
   line-height: 30px;
@@ -363,15 +397,17 @@ a {
   letter-spacing: 0.11px;
   color: #4c4d5f;
 }
-.product-section .sub-list a {
+.footer-wrapper .product-section .sub-list span {
+  color: #00b289;
+}
+.footer-wrapper .product-section .sub-list a {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.11px;
   color: #4c4d5f;
 }
-
-.free-section .free-heading {
+.footer-wrapper .free-section .free-heading {
   margin-bottom: 40px;
   color: #4c4d5f;
   font-size: 17px;
@@ -379,10 +415,10 @@ a {
   letter-spacing: 0.12px;
   text-transform: uppercase;
 }
-.free-section .first-section {
+.footer-wrapper .free-section .first-section {
   margin-bottom: 25px;
 }
-.free-section .first-section a {
+.footer-wrapper .free-section .first-section a {
   margin-bottom: 1px;
   font-size: 16px;
   line-height: 30px;
@@ -390,11 +426,65 @@ a {
   letter-spacing: 0.11px;
   color: #4c4d5f;
 }
-.free-section .self-section a {
+.footer-wrapper .free-section .self-section {
+  margin-bottom: 40px;
+}
+.footer-wrapper .free-section .self-section a {
   margin-bottom: 1px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.11px;
   color: #4c4d5f;
+}
+.footer-wrapper .free-section .template .template-heading {
+  margin-bottom: 20px;
+  color: #4c4d5f;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+.footer-wrapper .free-section .template .accordion {
+  --bs-accordion-border-width: none;
+}
+.footer-wrapper .free-section .template .accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #4c4d5f;
+  padding: 6px 9px;
+}
+.footer-wrapper .free-section .template .accordion .accordion-item .accordion-header .accordion-button::after {
+  margin-left: 3px;
+}
+.footer-wrapper .bonsai-section {
+  margin-left: 120px;
+}
+.footer-wrapper .bonsai-section .bonsai-heading {
+  margin-bottom: 40px;
+  color: #4c4d5f;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+}
+.footer-wrapper .bonsai-section a {
+  margin-bottom: 1px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.11px;
+  color: #4c4d5f;
+}
+.footer-wrapper .bonsai-section .list-section .accordion {
+  --bs-accordion-border-width: none;
+}
+.footer-wrapper .bonsai-section .list-section .accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #4c4d5f;
+  padding: 6px 9px;
+}
+.footer-wrapper .bonsai-section .list-section .accordion .accordion-item .accordion-header .accordion-button::after {
+  margin-left: 3px;
 }
