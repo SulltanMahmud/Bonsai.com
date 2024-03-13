@@ -5,17 +5,33 @@
   margin-right: auto;
   border-radius: 10px;
 
+  @include sm{
+    width: 100%;
+  }
+
 
   .buisness-box {
     padding: 50px 48px;
+    @include sm{
+      padding: 50px 45px;
+    }
 
     .buisness-title {
+      @include sm{
+         
+      }
       h1 {
         font-family: "Amerigo-bt roman opt", italic, sans-serif;
         font-size: 2.75rem;
         line-height: 130%;
         color: $title-color;
         font-weight: 300;
+
+        @include sm{
+          font-size: 2.1rem;
+          text-align: center;
+          line-height: 50px;
+        }
 
         span {
           color: $button-color;

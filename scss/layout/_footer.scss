@@ -1,6 +1,11 @@
 .footer-wrapper {
-    margin-top: 150px;
-    margin-bottom: 90px;
+    
+  margin-top: 150px;
+  margin-bottom: 90px;
+
+  @include sm{
+    margin-top: 80px;
+  }
   .product-section {
     .product-heading {
       margin-bottom: 40px;
@@ -103,6 +108,9 @@
 
   .bonsai-section {
     margin-left: 120px;
+    @include sm{
+      margin-left: 15px;
+    }
     .bonsai-heading {
       margin-bottom: 40px;
       color: #4c4d5f;
@@ -139,4 +147,11 @@
       }
     }
   }
+}
+
+#accordionPanelsStayOpenExample{
+   button{
+    background-color: $white-color;
+    border: none;
+   }
 }

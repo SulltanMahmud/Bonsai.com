@@ -4,10 +4,19 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+
+    @include sm{
+      font-size:24px;
+      line-height: 36px;
+    }
   }
 }
 #accordionFlushExample {
   padding: 0px 190px;
+
+  @include sm{
+    padding: unset;
+  }
 
   .accordion-item {
     border: none;
@@ -21,6 +30,11 @@
       margin-bottom: 20px;
       background-color: $white-color;
       box-shadow: none;
+
+      @include sm{
+        padding-right: 20px;   
+        padding-left: 30px;   
+      }
 
       &:hover {
         color: $button-hover-color;

@@ -12,18 +12,34 @@
 
         .drop-down-content {
           display: none;
-          width: 350px;
+          width: 330px;
           position: absolute;
+          left: -115px;
           z-index: 1000;
           .card {
             padding: 40px 20px;
-          }
 
-          .card-section-one-hover:hover {
-            display: block;
-          }
-          .card-section-one {
-            display: none;
+            .card-section-one-hover {
+              .card-icon-1 {
+                visibility: hidden;
+              }
+              &:hover {
+                .card-icon-1 {
+                  visibility: visible;
+                }
+              }
+            }
+
+            .card-title {
+              color: #292a2d;
+              font-size: 22px;
+              line-height: 26px;
+            }
+            .card-text {
+              font-size: 17px;
+              line-height: 22px;
+              color: #4c4d5f;
+            }
           }
         }
 
@@ -80,6 +96,16 @@
           background-color: $button-hover-color;
         }
       }
+    }
+  }
+}
+
+#accodionFlushExample-2{
+  .accordion-item{
+    button{
+      font-size: 16px;
+      line-height: 19px;
+      
     }
   }
 }

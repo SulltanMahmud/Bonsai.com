@@ -39,6 +39,12 @@
         .right-heading{
             padding-top: 36px;
             padding-bottom: 36px;
+            @include sm{
+              padding-top: 10px;
+              padding-bottom: 10px;
+              font-size: 25px;
+              line-height:25px ;
+            }
             color: $title-color;
             h2{
                 font-weight: 200;

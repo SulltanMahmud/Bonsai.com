@@ -1,11 +1,14 @@
 @font-face {
   font-family: "Proximanova opt";
-  src: url("/assets/font/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
+  src: url("/assets/font/Proxima-Nova-Font/Proxima\ Nova\ Font.otf")
+    format("opentype");
+  font-family: "Amerigo BT Roman";
+  src: url("/assets/font/Amerigo\ BT\ Roman/");
 }
 
 body {
   background-color: $white-color;
-  font-family:"Proximanova opt",sans-serif ;
+  font-family: "Proximanova opt", sans-serif;
 }
 
 * {
@@ -15,19 +18,21 @@ body {
 }
 
 .container-custom {
-  width: 100%;
   max-width: 70rem;
   margin-right: auto;
   margin-left: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
-a{
+a {
   text-decoration: none;
 }
 
-.heading-font{
-  font-family: "Amerigo-bt roman opt" ;
+.heading-font {
+  font-family: "Amerigo-bt roman opt";
 }
 
-.title-font{
+.title-font {
   font-family: "Proximanova opt";
 }

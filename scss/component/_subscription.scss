@@ -3,6 +3,9 @@
   padding-top: 110px;
   padding-bottom: 40px;
 
+  @include sm {
+    padding-top: 10px;
+  }
   .blue-shape {
     position: absolute;
     left: 160px;
@@ -20,16 +23,33 @@
     width: 55%;
     margin-right: auto;
     margin-left: auto;
+    @include sm {
+      width: 80%;
+      margin-left: 20px;
+      margin-right: none !important;
+    }
     .pricing-title {
       h1 {
         font-size: 40px;
         line-height: 40px;
         font-weight: 400;
         font-family: Amerigo-bt roman opt;
+
+        @include sm {
+          font-size: 24px;
+          line-height: 29px;
+          font-weight: 400;
+        }
       }
     }
 
     .pricing-button {
+      @include sm {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      }
       .month {
         font-size: 17px;
         font-weight: 600;
@@ -53,25 +73,7 @@
         letter-spacing: 1.22px;
         text-transform: uppercase;
       }
-      // .toggle-bar {
-      //   position: relative;
-      //   background-color: $button-color;
-      //   width: 50px;
-      //   height: 29px;
-      //   border-radius: 15px;
-      //   margin: 0px 28px 0px;
 
-      //   .toggle-ball {
-      //     position: absolute;
-      //     top: 2px;
-      //     width: 25px;
-      //     height: 25px;
-      //     background-color: $white-color;
-      //     margin-right: 2px;
-      //     margin-left: 2px;
-      //     border-radius: 50%;
-      //   }
-      // }
       .toggle_box {
         width: 50px;
         height: 29px;
@@ -83,7 +85,6 @@
         cursor: pointer;
 
         input[type="checkbox"] {
-          // visibility: hidden;
           opacity: 0;
           width: 100%;
           height: 30px;
@@ -97,7 +98,7 @@
         border-radius: 200px;
         background-color: aliceblue;
         top: 2px;
-        // left: 2px;
+
         left: 0px;
         margin-left: 2px;
         transition: left 0.3s ease;
@@ -107,6 +108,9 @@
 
   .card {
     height: 914px;
+    @include sm {
+      height: unset;
+    }
     .btn {
       width: 100%;
       background-color: $button-color;
@@ -115,12 +119,15 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: 700;
-      &:hover{
+      &:hover {
         background-color: $button-hover-color;
       }
     }
     .card-body {
       padding: 20% 14%;
+      @include sm {
+        padding: 9% 5%;
+      }
       .card-title {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -202,6 +209,34 @@
           }
         }
       }
+    }
+  }
+}
+
+.popular {
+  position: relative;
+  overflow: hidden;
+
+  .popular-tag {
+    position: absolute;
+    padding: 11px 11px; 
+
+    top: 50px;
+    left: 100px;
+
+    width: 360px;
+    // height: 30px;
+    // z-index: 1000;
+    background-color: #01b289;
+    transform: rotate(45deg);
+
+    .title {
+      font-family: 'Proximanova opt', sans-serif;
+      color: #fff;
+      font-size: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
     }
   }
 }

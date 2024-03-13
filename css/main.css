@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Proximanova opt";
-  src: url("/assets/font/Proxima-Nova-Font/Proxima Nova Font.otf");
+  src: url("/assets/font/Proxima-Nova-Font/Proxima Nova Font.otf") format("opentype");
+  font-family: "Amerigo BT Roman";
+  src: url("/assets/font/Amerigo BT Roman/");
 }
 body {
   background-color: #fff;
@@ -15,10 +17,11 @@ body {
 }
 
 .container-custom {
-  width: 100%;
   max-width: 70rem;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 a {
@@ -45,18 +48,29 @@ a {
 }
 .main-nav .nav-left .navbar-nav .nav-item .drop-down-content {
   display: none;
-  width: 350px;
+  width: 330px;
   position: absolute;
+  left: -115px;
   z-index: 1000;
 }
 .main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card {
   padding: 40px 20px;
 }
-.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card-section-one-hover:hover {
-  display: block;
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card .card-section-one-hover .card-icon-1 {
+  visibility: hidden;
 }
-.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card-section-one {
-  display: none;
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card .card-section-one-hover:hover .card-icon-1 {
+  visibility: visible;
+}
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card .card-title {
+  color: #292a2d;
+  font-size: 22px;
+  line-height: 26px;
+}
+.main-nav .nav-left .navbar-nav .nav-item .drop-down-content .card .card-text {
+  font-size: 17px;
+  line-height: 22px;
+  color: #4c4d5f;
 }
 .main-nav .nav-left .navbar-nav .nav-item:hover .drop-down-content {
   display: block;
@@ -100,10 +114,20 @@ a {
   background-color: #00a37e;
 }
 
+#accodionFlushExample-2 .accordion-item button {
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .main-section {
   position: relative;
   padding-top: 110px;
   padding-bottom: 40px;
+}
+@media only screen and (max-width: 576px) {
+  .main-section {
+    padding-top: 10px;
+  }
 }
 .main-section .blue-shape {
   position: absolute;
@@ -123,11 +147,33 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+@media only screen and (max-width: 576px) {
+  .main-section .content-pricing {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: none !important;
+  }
+}
 .main-section .content-pricing .pricing-title h1 {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   font-family: Amerigo-bt roman opt;
+}
+@media only screen and (max-width: 576px) {
+  .main-section .content-pricing .pricing-title h1 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-section .content-pricing .pricing-button {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
 }
 .main-section .content-pricing .pricing-button .month {
   font-size: 17px;
@@ -179,6 +225,11 @@ a {
 .main-section .card {
   height: 914px;
 }
+@media only screen and (max-width: 576px) {
+  .main-section .card {
+    height: unset;
+  }
+}
 .main-section .card .btn {
   width: 100%;
   background-color: #00b289;
@@ -193,6 +244,11 @@ a {
 }
 .main-section .card .card-body {
   padding: 20% 14%;
+}
+@media only screen and (max-width: 576px) {
+  .main-section .card .card-body {
+    padding: 9% 5%;
+  }
 }
 .main-section .card .card-body .card-title {
   margin-top: 0px;
@@ -267,11 +323,40 @@ a {
   line-height: 23px;
 }
 
+.popular {
+  position: relative;
+  overflow: hidden;
+}
+.popular .popular-tag {
+  position: absolute;
+  padding: 11px 11px;
+  top: 50px;
+  left: 100px;
+  width: 360px;
+  background-color: #01b289;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.popular .popular-tag .title {
+  font-family: "Proximanova opt", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .title-box .title h2 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 140%;
   font-family: Amerigo-bt roman opt;
+}
+@media only screen and (max-width: 576px) {
+  .title-box .title h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .add-on {
@@ -309,6 +394,14 @@ a {
   padding-bottom: 36px;
   color: rgb(76, 77, 95);
 }
+@media only screen and (max-width: 576px) {
+  .add-on-box .right-add .right-heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
 .add-on-box .right-add .right-heading h2 {
   font-weight: 200;
 }
@@ -324,8 +417,18 @@ a {
   margin-right: auto;
   border-radius: 10px;
 }
+@media only screen and (max-width: 576px) {
+  .buisness-bg {
+    width: 100%;
+  }
+}
 .buisness-bg .buisness-box {
   padding: 50px 48px;
+}
+@media only screen and (max-width: 576px) {
+  .buisness-bg .buisness-box {
+    padding: 50px 45px;
+  }
 }
 .buisness-bg .buisness-box .buisness-title h1 {
   font-family: "Amerigo-bt roman opt", italic, sans-serif;
@@ -333,6 +436,13 @@ a {
   line-height: 130%;
   color: rgb(76, 77, 95);
   font-weight: 300;
+}
+@media only screen and (max-width: 576px) {
+  .buisness-bg .buisness-box .buisness-title h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 .buisness-bg .buisness-box .buisness-title h1 span {
   color: #00b289;
@@ -351,9 +461,20 @@ a {
   font-size: 32px;
   line-height: 38px;
 }
+@media only screen and (max-width: 576px) {
+  .queshion-heading h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 
 #accordionFlushExample {
   padding: 0px 190px;
+}
+@media only screen and (max-width: 576px) {
+  #accordionFlushExample {
+    padding: unset;
+  }
 }
 #accordionFlushExample .accordion-item {
   border: none;
@@ -370,6 +491,12 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media only screen and (max-width: 576px) {
+  #accordionFlushExample .accordion-item button {
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+}
 #accordionFlushExample .accordion-item button:hover {
   color: #00a37e;
 }
@@ -377,6 +504,11 @@ a {
 .footer-wrapper {
   margin-top: 150px;
   margin-bottom: 90px;
+}
+@media only screen and (max-width: 576px) {
+  .footer-wrapper {
+    margin-top: 80px;
+  }
 }
 .footer-wrapper .product-section .product-heading {
   margin-bottom: 40px;
@@ -460,6 +592,11 @@ a {
 .footer-wrapper .bonsai-section {
   margin-left: 120px;
 }
+@media only screen and (max-width: 576px) {
+  .footer-wrapper .bonsai-section {
+    margin-left: 15px;
+  }
+}
 .footer-wrapper .bonsai-section .bonsai-heading {
   margin-bottom: 40px;
   color: #4c4d5f;
@@ -487,4 +624,9 @@ a {
 }
 .footer-wrapper .bonsai-section .list-section .accordion .accordion-item .accordion-header .accordion-button::after {
   margin-left: 3px;
+}
+
+#accordionPanelsStayOpenExample button {
+  background-color: #fff;
+  border: none;
 }

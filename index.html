@@ -32,19 +32,156 @@
               width="150px"
             />
           </a>
+
+          <!-- Offcanvas -->
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header px-5">
+              <img
+                src="./assets/asset 8.svg"
+                alt=""
+                width="40px"
+                height="40px"
+              />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-block d-lg-none">
+              <div class="accordion accordion-flush" id="accordionFlushExample-2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                       Product
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample-2"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Templates
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample-2"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                       Pricing
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsefour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsefour"
+                    >
+                       Pricing
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapsefour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample-2"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- nav-left -->
-          <div class="nav-left">
+          <div class="nav-left d-lg-block d-none">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <button
@@ -59,134 +196,58 @@
                 <div class="drop-down-content">
                   <div class="card mb-3">
                     <div class="card-body">
-                      <div class="card-section card-section-one-hover">
-                        <div class="card-title">Bonsai Workflow</div>
-                        <div
-                          class="card-content d-flex justify-content-center align-items-center"
-                        >
-                          <div class="card-text">
-                            Look professional, win more clients and manage your
-                            business from one place
-                          </div>
-
-                          <div class="card-icon">
-                            <i class="fa-solid fa-chevron-right"></i>
-                          </div>
+                      <div
+                        class="card-section card-section-one-hover d-flex justify-content-center align-items-center gap-2  "
+                      >
+                        <div class="card-content">
+                          <div class="card-title heading-font">Bonsai Workflow</div>
+                          Look professional, win more clients and manage your
+                          <div class="card-text">business from one place</div>
                         </div>
-                      </div>
-
-                      <!-- right dropdown -->
-                      <div class="card-section-one">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="sidebar-box">
-                              <div class="side-dropdown-content d-flex">
-                                <div class="side-img">
-                                  <img src="./assets/asset 1.svg" alt="" />
-                                </div>
-                                <div class="side-tittle">Invoices</div>
-                              </div>
-                              <div class="side-bar-description">
-                                Get paid faster with automatic invoicing,onliner
-                                paymetns and more
-                              </div>
-                            </div>
-
-                            <div class="sidebar-box mt-3">
-                              <div class="side-dropdown-content d-flex">
-                                <div class="side-img">
-                                  <img src="./assets/asset 1.svg" alt="" />
-                                </div>
-                                <div class="side-tittle">Invoices</div>
-                              </div>
-                              <div class="side-bar-description">
-                                Get paid faster with automatic invoicing,onliner
-                                paymetns and more
-                              </div>
-                            </div>
-
-                            <div class="sidebar-box mt-3">
-                              <div class="side-dropdown-content d-flex">
-                                <div class="side-img">
-                                  <img src="./assets/asset 1.svg" alt="" />
-                                </div>
-                                <div class="side-tittle">Invoices</div>
-                              </div>
-                              <div class="side-bar-description">
-                                Get paid faster with automatic invoicing,onliner
-                                paymetns and more
-                              </div>
-                            </div>
-
-                            <div class="sidebar-box mt-3">
-                              <div class="side-dropdown-content d-flex">
-                                <div class="side-img">
-                                  <img src="./assets/asset 1.svg" alt="" />
-                                </div>
-                                <div class="side-tittle">Invoices</div>
-                              </div>
-                              <div class="side-bar-description">
-                                Get paid faster with automatic invoicing,onliner
-                                paymetns and more
-                              </div>
-                            </div>
-
-                            <div class="sidebar-box mt-3">
-                              <div class="side-dropdown-content d-flex">
-                                <div class="side-img">
-                                  <img src="./assets/asset 1.svg" alt="" />
-                                </div>
-                                <div class="side-tittle">Invoices</div>
-                              </div>
-                              <div class="side-bar-description">
-                                Get paid faster with automatic invoicing,onliner
-                                paymetns and more
-                              </div>
-                            </div>
-                          </div>
+                        <div class="card-icon card-icon-1">
+                          <i class="fa-solid fa-chevron-right"></i>
                         </div>
                       </div>
 
                       <!-- Card-section -->
 
-                      <div class="border mt-3 mb-3"></div>
-                      <div class="card-section">
-                        <h5 class="card-title">Bonsai Workflow</h5>
-                        <div
-                          class="card-content d-flex justify-content-center align-items-center"
-                        >
+                      <div class="border mt-5 mb-5"></div>
+                      <div
+                        class="card-section d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <div class="card-content">
+                          <div class="card-title heading-font">Bonsai Workflow</div>
                           <div class="card-text">
                             Look professional, win more clients and manage your
                             business from one place
                           </div>
-                          <div class="card-icon">
-                            <i class="fa-solid fa-chevron-right"></i>
-                          </div>
+                        </div>
+                        <div class="card-icon">
+                          <i class="fa-solid fa-chevron-right"></i>
                         </div>
                       </div>
 
-                      <div class="border mt-3 mb-3"></div>
+                      <div class="border mt-5 mb-5"></div>
 
-                      <div class="card-section">
-                        <div class="card-title">Bonsai Workflow</div>
-                        <div
-                          class="card-content d-flex justify-content-center align-items-center"
-                        >
+                      <div
+                        class="card-section d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <div class="card-content">
+                          <div class="card-title heading-font">Bonsai Workflow</div>
                           <div class="card-text">
                             Look professional, win more clients and manage your
                             business from one place
                           </div>
-
-                          <div class="card-icon">
-                            <i class="fa-solid fa-chevron-right"></i>
-                          </div>
+                        </div>
+                        <div class="card-icon">
+                          <i class="fa-solid fa-chevron-right"></i>
                         </div>
                       </div>
-                      <div class="border mt-3"></div>
+
+                      
                     </div>
                   </div>
                 </div>
-                <!-- right dropdown-section -->
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -222,7 +283,7 @@
             </ul>
           </div>
           <!-- Nav right -->
-          <div class="nav-right">
+          <div class="nav-right d-lg-block d-none">
             <form class="d-flex" role="search">
               <button class="btn btn-outline-success btn-1" type="submit">
                 Log In
@@ -236,12 +297,12 @@
       </nav>
     </div>
 
-    <!-- Dropdown-right section -->
-
     <!-- Subscription section -->
     <section class="container-custom main-section">
-      <div class="blue-shape"></div>
-      <div class="content-pricing d-flex justify-content-between">
+      <!-- <div class="blue-shape"></div> -->
+      <div
+        class="content-pricing d-flex d-sm-flex flex-column flex-lg-row justify-content-between"
+      >
         <div class="pricing-title">
           <h1>Plans & Pricing</h1>
         </div>
@@ -265,7 +326,7 @@
       <!-- Three columns based on price list -->
       <div class="main-pricelist mt-5">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-12">
             <div class="card">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="content-item">
@@ -336,12 +397,17 @@
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary f-m1">START FREE</a>
+                <a href="#" class="btn btn-primary f-m1 mt-3 mt-lg-0"
+                  >START FREE</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card">
+          <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+            <div class="card popular">
+              <div class="popular-tag">
+                <div class="title text-center title-font">MOST&nbsp;Popular</div>
+              </div>
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="content-item">
                   <h5 class="card-title">Professional</h5>
@@ -418,11 +484,13 @@
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary .f-m2">START FREE</a>
+                <a href="#" class="btn btn-primary .f-m2 mt-3 mt-lg-0"
+                  >START FREE</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-12 mt-4 mt-lg-0">
             <div class="card">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="content-item">
@@ -520,7 +588,9 @@
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary .f-m2">START FREE</a>
+                <a href="#" class="btn btn-primary .f-m2 mt-3 mt-lg-0"
+                  >START FREE</a
+                >
               </div>
             </div>
           </div>
@@ -543,7 +613,7 @@
     <div class="container-custom">
       <div class="add-on px-5 py-3">
         <div
-          class="add-on-box d-flex justify-content-between align-items-center"
+          class="add-on-box d-flex flex-column-reverse d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center"
         >
           <div class="left-add">
             <div class="heading">Collaborators</div>
@@ -562,7 +632,7 @@
 
       <div class="add-on px-5 py-3">
         <div
-          class="add-on-box d-flex justify-content-between align-items-center"
+          class="add-on-box d-flex flex-column-reverse d-lg-flex flex-lg-row justify-content-lg-between justify-content-start align-items-lg-center"
         >
           <div class="left-add">
             <div class="heading">Partners</div>
@@ -580,7 +650,7 @@
       </div>
       <div class="add-on px-5 py-3">
         <div
-          class="add-on-box d-flex justify-content-between align-items-center"
+          class="add-on-box d-flex flex-column-reverse d-lg-flex flex-lg-row justify-content-lg-between justify-content-start align-items-lg-center"
         >
           <div class="left-add">
             <div class="heading">Bonsai Tax</div>
@@ -607,7 +677,7 @@
     <div class="container-custom mt-5">
       <div class="buisness-bg">
         <div
-          class="buisness-box d-flex justify-content-between align-items-center"
+          class="buisness-box d-lg-flex flex-lg-row d-flex flex-column justify-content-between align-items-center"
         >
           <div class="buisness-title">
             <h1>
@@ -623,7 +693,7 @@
     </div>
 
     <!-- Queshin-section -->
-    <div class="mt-5">
+    <div class="mt-5 mt-lg-5">
       <div class="container-custom">
         <div class="queshion-heading text-center p-3">
           <h2>Frequently Asked Questions</h2>
@@ -758,7 +828,7 @@
     <div class="container-custom">
       <div class="footer-wrapper">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-12">
             <div class="product-section">
               <div class="product-heading">PRODUCT</div>
               <div class="list-section d-flex flex-column">
@@ -781,7 +851,7 @@
             </div>
           </div>
           <!-- free resource section -->
-          <div class="col-4">
+          <div class="col-lg-4 col-12 mt-5 mt-lg-0">
             <div class="free-section">
               <div class="free-heading">FREE RESOURCES</div>
               <div class="first-section d-flex flex-column">
@@ -1041,7 +1111,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-12 mt-5 mt-lg-0">
             <!-- Bonsai -->
             <div class="bonsai-section">
               <div class="bonsai-heading">BONSAI</div>
